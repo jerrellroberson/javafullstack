@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- 
+When validating the form an error was given: 
+The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+From line 21, column 5; to line 21, column 55
+
+<label>↩    <input type="date" id="bday" name="bday" lang="en"><br><b
+
+FIX: 
+https://github.com/chemerisuk/better-dateinput-polyfill
+-->
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8"/>
+    <script src="node_modules/better-dom/dist/better-dom.js"></script>
+    <script src="node_modules/better-dateinput-polyfill/dist/better-dateinput-polyfill.js"></script>
+    
+  </head>
+  <body>
+    <form>
+    <h1>My Registration Form</h1>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname"  name="fname"><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email"><br>
+    <label for="pwd">Password</label>
+    <input type="password" id="pwd" name="pwd"><br>
+    <label for="cpwd">PW Confirm</label>
+    <input type="password" id="cpwd" name="cpwd"><br>
+    <label for="bday">Birthday</label>
+    <input type="date" id="bday" name="bday"><br><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="fmale" name="gender" value="fmale">
+    <label for="fmale">Female</label>
+    <input type="radio" id="other" name="other" value="other"> 
+    <label for="other">Other</label><br><br>
+    <p>A short description about yourself:</p>
+    <textarea id="textarea" rows="4" cols="35"></textarea>
+    <label for="language">Favorite Language:</label>
+    <select id="language">
+      <option value="javascript">Javascript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+  </body>
+
+</html>
