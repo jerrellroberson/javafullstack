@@ -1,0 +1,55 @@
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+#wrapper {
+  height: 800px;
+  width: auto;
+  background-color: gray;
+  margin: 0 auto;
+
+}
+
+#header {
+  background-color: green;
+  width: auto;
+  height: 150px;
+  margin: 10px; 
+  /* padding: 10px; */
+ } 
+
+
+#navigation {
+  min-height: 300px;
+  background-color: blue;
+  width: 300px;
+  display: inline-block;
+  }  
+
+#main_content {
+  min-height: 450px;
+  min-width: 776px;
+  width: auto;
+  display: inline-block;
+  background-color: red;
+  vertical-align: top;
+}
+
+.subcontents{
+  min-width: 220px;
+  min-height: 200px;
+  width: auto;
+  display: inline-block;
+  background-color: yellow;
+  
+
+}
+
+#advertisement {
+  min-height: 150px;
+  width: auto;
+  background-color: purple;
+
+
+}
