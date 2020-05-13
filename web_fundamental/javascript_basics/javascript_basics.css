@@ -9,7 +9,7 @@ body *{
 }
 
 div.container {
-  width: 970px;
+  width: 1030px;
   background-color: #1C345D;
   min-height: 800px;
   padding-top: 8px;
@@ -40,7 +40,7 @@ div.header {
 div.nav {
 
   background-color: #297C8C;
-  width: 230px;
+  width: 225px;
   min-height:250px;
   display: inline-block;
   border-radius: 20px;
@@ -52,41 +52,46 @@ div.nav {
 
 }
 
+/* NEED HEEP WITH ALIGNMENT */
 div.nav ul li {
-  color: white;
-
+  /* color: white; */
+  /* margin: 0; */
+  padding-left: 0px;  
 }
 
 div.main_body {
   background-color: #0E1822;
-  width: 710px;
+  width: 745px;
   height: 610px;
   vertical-align: top;
   display: inline-block;
   border-radius: 20px;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 15px;   
   color: white;
   padding-top: 25px;
-  /* padding-right: 5px;
-  padding-left: 5px; */
+  padding-right: 10px;
+  padding-left: 10px;
   /* text-align: justify; */
   /* text-justify: inter-word; */
 }
 
+/* Adding color to certain words */
 div.main_body div.container_body #variable_color {
   color: purple;
 
 }
 
-.title {
+/* NEED TO DETERMINE HOW TO UNDERLINE THE TITLES */
+#title {
   text-decoration: underline;
 }
 
+/* NEED TO FIGURE OUT VERTICAL ALIGNMENT W/O POSITION PROPERTY */
 div.footer{
   background-color: #5D6573;
   display: block;
-  width: 935px;
+  width: auto;
   height: 50px;
   margin-left: 5px;
   margin-top: 15px;   
@@ -96,7 +101,7 @@ div.footer{
   /* line-height: normal; */
   color: white;
   vertical-align: middle;
-
+  padding-left: 20px;
 }
 
 #opening_paragraph {
