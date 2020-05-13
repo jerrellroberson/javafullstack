@@ -76,6 +76,11 @@ div.main_body {
   /* text-justify: inter-word; */
 }
 
+.container_heading {
+  padding-bottom: 10px;
+
+}
+
 /* Adding color to certain words */
 div.main_body div.container_body #variable_color {
   color: purple;
