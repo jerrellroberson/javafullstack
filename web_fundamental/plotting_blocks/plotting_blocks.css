@@ -1,55 +1,44 @@
-* {
-  margin: 10px;
-  padding: 10px;
-}
-
-#wrapper {
-  height: 800px;
-  width: auto;
-  background-color: gray;
-  margin: 0 auto;
-
-}
-
-#header {
-  background-color: green;
-  width: auto;
-  height: 150px;
-  margin: 10px; 
-  /* padding: 10px; */
- } 
-
-
-#navigation {
-  min-height: 300px;
-  background-color: blue;
-  width: 300px;
-  display: inline-block;
-  }  
-
-#main_content {
-  min-height: 450px;
-  min-width: 776px;
-  width: auto;
-  display: inline-block;
-  background-color: red;
-  vertical-align: top;
-}
-
-.subcontents{
-  min-width: 220px;
-  min-height: 200px;
-  width: auto;
-  display: inline-block;
-  background-color: yellow;
-  
-
-}
-
-#advertisement {
+/*CSS reset settings here*/
+*{
+  margin: 0px;
+  padding: 0px;
+ }
+ #wrapper{
+  width: 950px;
+  background-color: silver;
+  margin: 0px auto;
+  padding: 15px;
+ }
+ #header{
   min-height: 150px;
-  width: auto;
+  background-color: green; 
+  margin-bottom: 15px;
+ }
+ #navigation{
+  min-height: 300px;
+  width: 200px;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+ }
+ #main_content{
+  min-height: 400px;
+  width: 700px;
+  background-color: red;
+  display: inline-block;
+  padding: 15px;
+ }
+ .subcontents{
+  min-height: 200px;
+  width: 210px;
+  background-color: yellow;
+  display: inline-block;
+  margin-right: 15px;
+ }
+ #advertisement{
+  min-height: 120px;
+  width: 660px;
   background-color: purple;
-
-
-}
+  margin-top: 15px;
+ }
