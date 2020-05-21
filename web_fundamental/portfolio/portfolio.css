@@ -174,6 +174,10 @@
 .display-boxes .box button {
   background-color: teal;
   text-align: center;
+  color: white;
+  border-radius: 5px;
+  box-shadow: slategray;
+  padding: 5px;
 }
 
 .footer {
