@@ -15,9 +15,12 @@ for (var n=1; n<=20; n+=2){
 //Increase: 2,3,4,5
 
 var increase = 0; 
+var sum = 0;
 for (var num=1; num<=5; num++){
   console.log("Num: " + num)
-  console.log("Sum: " + (num + increase))
-  increase++;
+  //console.log("Sum: " + (num + increase))
+  sum += num;
+  console.log("Sum: " + sum)
+  //increase++;
 
 }

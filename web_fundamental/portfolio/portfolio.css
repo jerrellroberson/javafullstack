@@ -108,12 +108,12 @@
 
 /* .display-boxes *{
   width: 230px;
-  /* height: 500px; */
-  /* background-color: #fff;  */
-  /* display: inline-block; */
-  /* margin: 10px; */
-  /* padding: 5px; */
-  /* background-color: gray; */
+  height: 500px; 
+  background-color: #fff; 
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  background-color: gray;
 } */
 
 .box{
@@ -124,7 +124,7 @@
   box-sizing: border-box; 
   background-color: #fff; 
   /* padding: 10px; */
-  flex: 1;
+  /* flex: 1; */
 
 }
 
