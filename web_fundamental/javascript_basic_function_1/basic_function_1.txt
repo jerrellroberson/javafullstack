@@ -1,0 +1,241 @@
+SCORE: 13 out of 15
+
+Function #1. 
+
+function a(){
+    return 35;
+}
+console.log(a())
+
+Prediction: 35
+Actual Output: 35
+
+
+Function #2. 
+
+function a(){
+    return 4;
+}
+console.log(a()+a());
+
+Prediction: 8
+Actual Output: 8
+
+
+Function #3. 
+
+function a(b){
+    return b;
+}
+console.log(a(2)+a(4));
+
+Prediction: 6
+Actual Output: 6
+
+
+Function #4. 
+
+function a(b){
+    console.log(b);
+    return b*3;
+}
+console.log(a(3));
+
+Prediction: 
+3
+9
+Actual Output:
+3
+9
+
+
+Function #5. 
+
+function a(b){
+   return b*4;
+   console.log(b);
+}
+console.log(a(10));
+
+Prediction: 40
+Actual Output: 40
+
+
+Function #6. 
+
+function a(b){
+    if(b<10) {
+        return 2;
+    }
+    else     {
+        return 4;
+    }
+    console.log(b);
+}
+console.log(a(15));
+
+Prediction: 
+4
+15
+Actual Output: 4
+
+
+Function #7.
+
+function a(b,c){
+    return b*c;
+}
+console.log(10,3);
+console.log( a(3,10) );
+
+Prediction:
+10 3
+30
+Actual Output: 
+10 3
+30
+
+
+Function #8.
+
+function a(b){
+    for(var i=0; i<10; i++){
+        console.log(i);
+    }
+    return i;
+}
+console.log(3);
+console.log(4);
+
+Prediction:
+3
+4
+Actual Output: 
+3
+4
+
+Function #9.
+
+function a(){
+    for(var i=0; i<10; i++){
+        i = i +2;
+        console.log(i);
+    }
+}
+a();
+
+Prediction:
+0
+1
+..
+9
+Actual Output: 
+2
+5
+8
+11
+
+
+Function #10.
+
+function a(b,c){
+    for(var i=b; i<c; i++) {
+       console.log(i);
+   }
+   return b*c;
+}
+a(0,10);
+console.log(a(0,10));
+
+Prediction:
+0
+1
+..
+9
+0
+Actual Output: 
+0
+..
+9
+0
+..
+9
+0
+
+
+Function #11.
+
+function a(){
+    for(var i=0; i<10; i++){
+       for(var j=0; j<10; j++){
+           console.log(j);
+       }
+       console.log(i);
+    }
+}
+
+Prediction: blank
+Actual Output: undefine
+
+
+Function #12.
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+
+Prediction: blank
+Actual Output: undefine
+
+
+Function #13.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+
+Prediction: 10
+Actual Output: 10
+
+
+Function #14.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+
+Prediction: 
+15
+10
+Actual Output: 
+15
+10
+
+
+Function #15.
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
+
+Prediction: 15
+Actual Output: 
+15
+15
