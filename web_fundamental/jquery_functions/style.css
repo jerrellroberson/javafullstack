@@ -23,7 +23,7 @@ button {
   width: 160px
 }
 
-p {
+.container p {
   display: inline-block;
   font-color: red;
   font-size: 20px;
@@ -37,4 +37,8 @@ p {
 hr {
   width: 100%;
   height: 5px;
+}
+
+.addClassFunction .paragraph {
+  color: red;
 }

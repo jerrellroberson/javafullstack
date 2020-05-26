@@ -6,11 +6,51 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-    $(document).ready(functiion(){
-        $("button.clickFunction").click(function(){
-          alert("Example of .click");
-        })
+    $(document).ready(function(){
+      $('.clickFunction button').click(function(){
+        alert('Test!');
       });
+      $('.hideFunction #hide').click(function(){
+        $('.hideFunction p').hide();
+      });
+      $('.hideFunction #show').click(function(){
+        $('.hideFunction p').show();
+      });
+      $('.toggleFunction button').click(function(){
+        $('.toggleFunction p').toggle();
+      });
+      $('.slideFunction #up').click(function(){
+        $('.slideFunction p').slideUp();
+      });
+      $('.slideFunction #down').click(function(){
+        $('.slideFunction p').slideDown();
+      });
+      $('.slideToggleFunction button').click(function(){
+        $('.slideToggleFunction p').slideToggle();
+      });
+      $('.fadeFunction #fadeout').click(function(){
+        $('.fadeFunction p').fadeOut();
+      });
+      $('.fadeFunction #fadein').click(function(){
+        $('.fadeFunction p').fadeIn();
+      });
+      $('.addClassFunction button').click(function(){
+        $('.addClassFunction h1').addClass('paragraph');
+      });
+      $('.beforeFunction button').click(function(){
+        $('.beforeFunction h1').before('<h1>The</h1>');
+      });
+      $('.afterFunction button').click(function(){
+        $('.afterFunction h1').after('<h1>Function</h1>');
+      });
+      $('.appendFunction button').click(function(){
+        $('.appendFunction p').after('<h1>Wow!!</h1>');
+      });
+      $('.htmlFunction button').click(function(){
+        $('.htmlFunction p').html('<p>New verbiage created!</p>');
+      });
+    });
+
   </script>
   <title>jQuery Functions</title>
 </head>
@@ -19,103 +59,88 @@
     <div class="clickFunction">
       <h1>Click</h1>
       <button>Click</button>
-      <p>Click the button to trigger an event.</p>
+      <p>Click the button to trigger an alert event.</p>
       <hr>
     </div>
     <div class="hideFunction">
       <h1>Hide</h1>
-      <button>Hide</button>
-      <p>Click to hide the element.</p>
-      <hr>
-    </div>
-    <div class="showFunction">
-      <h1>Show</h1>
-      <button>Show</button>
-      <p>Click to display matched elements.</p>
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+      <p>Click to hide the paragraph element.</p>
       <hr>
     </div>
     <div class="toggleFunction">
       <h1>Toggle</h1>
       <button>Toggle</button>
-      <p>Click to display or hide the matched elements.</p>
+      <p>Click to display or hide the paragraph.</p>
       <hr>
     </div>
-    <div class="slideDownFunction">
-      <h1>Slidedown</h1>
-      <button>Slidedown</button>
-      <p>Click to display the matched elements with a sliding motion</p>
-      <hr>
-    </div>
-    <div class="slideUpFunction">
-      <h1>Slideup</h1>
-      <button>Slideup</button>
-      <p>Click to hide the matched elements with a sliding motion.</p>
+    <div class="slideFunction">
+      <h1>Slideup and SlideDown</h1>
+      <button id="up">SlideUp</button>
+      <button id="down">Slidedown</button>
+      <p>Click to display or hide the paragraph in sliding motion.</p>
       <hr>
     </div>
     <div class="slideToggleFunction">
-      <h1>Slidetoggle</h1>
+      <h1>SlideToggle</h1>
       <button>Slidetoggle</button>
-      <p>Click to display or hide the matched elements with a sliding motion.</p>
+      <p>Click to display or hide the paragraph in sliding motion.</p>
       <hr>
     </div>
-    <div class="fadeInFunction">
-      <h1>Fadein</h1>
-      <button>Fadein</button>
-      <p>Click to display the matched elements by fading them to opaque.</p>
-      <hr>
-    </div>
-    <div class="fadeOutFunction">
-      <h1>Fadeout</h1>
-      <button>Fadeout</button>
-      <p>Click to hide the matched elements by fading them to transparent.</p>
+    <div class="fadeFunction">
+      <h1>FadeIn and FadeOut</h1>
+      <button id="fadeout">Fadeout</button>
+      <button id="fadein">Fadein</button>
+      <p>Click to display the paragraph by fading them to opaque.</p>
       <hr>
     </div>
     <div class="addClassFunction">
       <h1>AddClass</h1>
       <button>AddClass</button>
-      <p>Click to add the specified class(es) to each element in the set of matched elements.<p>
+      <p>Click to add a class to the h1 tag  to change the color.</p>
       <hr>
     </div>
     <div class="beforeFunction">
       <h1>Before</h1>
       <button>Before</button>
-      <p>Click to insert content, specified by the parameter, before each element in the set of matched elements.<p>
+      <p>Click to insert the word "The" before each the h1 elements.</p>
       <hr>
     </div>
     <div class="afterFunction">
       <h1>After</h1>
       <button>After</button>
-      <p>Click to insert content, specified by the parameter, after each element in the set of matched elements.<p>
+      <p>Click to insert content, specified by the parameter, after each element in the set of matched elements.</p>
       <hr>
     </div>
     <div class="appendFunction">
       <h1>Append</h1>
       <button>Append</button>
-      <p>Click to insert content, specified by the parameter, to the end of each element in the set of matched elements.<p>
+      <p>Click to insert "Wow!!"to the end of paragraph element.</p>
       <hr>
     </div>
     <div class="htmlFunction">
       <h1>HTML</h1>
       <button>HTML</button>
-      <p>Click to get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.<p>
+      <p>Click to get the HTML contents paragraph element changed to new content.</p>
       <hr>
     </div>
     <div class="attrFunction">
       <h1>Attr</h1>
       <button>Attr</button>
-      <p>Click to get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.<p>
+      <p>Click to get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
       <hr>
     </div>
     <div class="valFunction">
       <h1>Val</h1>
       <button>Val</button>
-      <p>Click to get the current value of the first element in the set of matched elements or set the value of every matched element.<p>
+      <p>Click to get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
       <hr>
     </div>
     <div class="textFunction">
       <h1>Text</h1>
       <button>Text</button>
-      <p>Click to get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.<p>
+      <p>Click to get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
       <hr>
     </div>
     
