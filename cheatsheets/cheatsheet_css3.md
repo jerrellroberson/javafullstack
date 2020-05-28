@@ -19,8 +19,49 @@
   font-size: 16px;
 }
 ```
+
 ## Styling Elements
 1. The width and height styling elements are used to the determine the size of the elements
 2. The value for width and height can be expressed in pixel (px) and percentage
-3. Percentage is used more so for responsive pages 
+3. Percentage is used more so for responsive design pages 
+4. The height element is used to determine the amount of content that the element will hold
+5. If the height element is left unset, the element will expand to fit the content 
+6. If th height element is set and the content is larger than the height property, you will need to manually adjust the height or use the overflow property
+```
+div {
+  overflow: scroll;
+}
+```
+7. Background color property can be set using hex, rgb or semantic code
+8. The border property can be set using the border thickness, border type, and the border color
+```
+div {
+  border: 1px solid #0000000;
+}
+9. The border-radius property is used give rounded corners 
+
+## Styling Text
+1. The text color is used to specific the color of the text using hex, RGB or semantic code
+2. Text-align property is used to set the horizonal alignment of any text is center, left align, right align or justified
+3. Text-align only works if the display's property is block
+4. To remove underline, overline and line-throughs, used text-decoration
+5. For font-size property values, em or % is recommendated by most developers 
+
+## Display Property
+1. Each HTML element is either inline or block
+2. Inline items only take up as much space as needed
+3. Inline elements: <a>, <img>, <span>, <input>, <label>, <select>, <testarea>
+4. Block items take up 100% of the width of the parent element
+5. Block elements: <body>, <div>, <form>, <h1>-<h6>, <p>, <table>, <ul>, <ol>, <li>
+6. To get rid of the bullets for a navigation menu:
+```
+ #nav-menu{
+  list-style-type: none; /*This gets rid of the bullets.*/
+ }
+```
+## Browser Compatibility
+1. Various browsers may display HTML elements differently
+2. To solve the cross-browser issues, it's encouraged that you use 'RESET' and 'NORMALIZE' and define what default attributes should be 
+3. Also, to fix cross-platform issues it is encouraged to validate the HTML/CSS site which gives recommendations on how to fix possible compatibility issues 
+4. A good resource to read for CSS Reset is [Killer Collection of CSS Resets](https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/) and [CSS Normalization](https://github.com/necolas/normalize.css/) 
 

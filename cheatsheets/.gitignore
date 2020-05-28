@@ -1,2 +1,4 @@
 # Regular text files 
-*.txt 
+*.txt
+*.swp
+*.log 
