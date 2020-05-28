@@ -49,6 +49,15 @@
       $('.htmlFunction button').click(function(){
         $('.htmlFunction p').html('<p>New verbiage created!</p>');
       });
+      $('.attrFunction button').click(function(){
+        $('.attrFunction h1').attr('id', 'NewButton2');
+      });
+      $('.valFunction button').click(function(){
+        $("input:text").val("Jerrell Roberson");;
+      });
+      $('.textFunction button').click(function(){
+        $('.textFunction p').text('Use the text function to change to verbiage.');
+      });
     });
 
   </script>
@@ -126,15 +135,16 @@
       <hr>
     </div>
     <div class="attrFunction">
-      <h1>Attr</h1>
+      <h1 id="NewButton1">Attr</h1>
       <button>Attr</button>
-      <p>Click to get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+      <p>Click to set the color of the heading to red with the attr() function.</p>
       <hr>
     </div>
     <div class="valFunction">
       <h1>Val</h1>
       <button>Val</button>
       <p>Click to get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+      <p id="input">Name: <input type="text" name="user"></p>
       <hr>
     </div>
     <div class="textFunction">

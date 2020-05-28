@@ -42,3 +42,13 @@ hr {
 .addClassFunction .paragraph {
   color: red;
 }
+
+#NewButton2 {
+  color: red;
+}
+
+.container .valFunction #input {
+  padding-left: 225px;
+  font-size: 20px;
+}
+
