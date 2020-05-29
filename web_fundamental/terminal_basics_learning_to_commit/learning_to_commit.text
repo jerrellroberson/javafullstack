@@ -1,0 +1,19 @@
+mkdir test
+cd test
+touch index.html style.css
+git init
+git add .
+git commit -m "Adding index.html and style.css"
+echo "<!doctype html>" > index.html
+git add index.html
+git commit -m "update html"
+echo "*{outline: red;}" > style.css
+git add style.css
+git commit -m "update css"
+git log 
+git revert -HEAD
+git commit -"Updates made"
+echo "margin: 0px auto" >> style.css
+git add style.css
+git commit -m "Addtl change to style.css
+
