@@ -1,0 +1,33 @@
+  745  mkdir basic_repo/
+  746  cd basic_repo/
+  747  echo "# Test1" > test1.md
+  748  echo "# Test1" > test2.md
+  749  echo "# Test1" > test3.md
+  750  ls
+  751  cd ..
+  752  git add basic_repo/
+  753  git commit -m "Updated basic_repo"
+  754  git push
+  755  echo "# Test2" > test1.md
+  756  echo "# Test2" > test2.md
+  757  echo "# Test2" > test3.md
+  758  git add basic_repo/
+  759  git commit -m "Addtl changes made"
+  760  git add basic_repo/test1.md
+  761  git commit -m "Addtl changes made"
+  762  git add basic_repo/test1.md test2.md test3.md
+  763  git commit -m "Addtl changes made"
+  764  git push
+  765  git add basic_repo/
+  766  git commit -m "Addtl changes made"
+  767  git add basic_repo/test1.md
+  768  git push
+  769  history
+  770  cd basic_repo/
+  771  echo "# Test2" > test1.md
+  772  echo "# Test2" > test2.md
+  773  echo "# Test2" > test3.md
+  774  git add .
+  775  git commit -m "Updated basic_repo"
+  776  git push
+  777  history
